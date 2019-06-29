@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int FiboSeq_Last(int last_num)
+void FiboSeq_Last(int last_num)
 {
     int prev = 0;
     int curr = 1;
@@ -30,7 +30,7 @@ int FiboSeq_Last(int last_num)
     }
 }
 
-int FiboSeq(int fib_num)
+void FiboSeq(int fib_num)
 {
     int prev = 0;
     int curr = 1;

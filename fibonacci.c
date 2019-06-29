@@ -71,6 +71,6 @@ int main(void)
     FiboSeq_Last(last_num);
     printf("\nEnter how many numbers will be generated in a Fibonacci Sequence: ");
     scanf("%i", &fib_num);
-    printf("The Fibonacci Sequence with %i numbers is: ", last_num);
+    printf("The Fibonacci Sequence with %i numbers is: ", fib_num);
     FiboSeq(fib_num);
 }

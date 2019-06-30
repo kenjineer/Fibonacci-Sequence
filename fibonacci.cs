@@ -26,8 +26,7 @@ public class Fibonacci
         int prev = 0;
         int curr = 1;
         int next = 1;
-        int[] fib = new int[100];
-        int  i = 1;
+        int i = 1;
 
         Console.Write(prev);
 

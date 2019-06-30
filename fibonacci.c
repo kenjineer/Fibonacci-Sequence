@@ -5,27 +5,17 @@ void FiboSeq_Last(int last_num)
     int prev = 0;
     int curr = 1;
     int next = 1;
-    int fib[1000];
-    int i = 0;
 
-    fib[i] = prev;
-    printf("%i", fib[i]);
-    ++i;
+    printf("%i", prev);
 
     if (last_num != 0)
     {
         while (last_num >= curr)
         {
-            fib[i] = next;
+            printf(", %i", next);
             next = prev + curr;
             prev = curr;
             curr = next;
-            i++;
-        }
-
-        for (int j = 1; j < i; j++)
-        {
-            printf(", %i", fib[j]);
         }
     }
 }
@@ -35,27 +25,19 @@ void FiboSeq(int fib_num)
     int prev = 0;
     int curr = 1;
     int next = 1;
-    int fib[1000];
-    int i = 0;
+    int i = 1;
 
-    fib[i] = prev;
-    printf("%i", fib[i]);
-    ++i;
+    printf("%i", prev);
 
     if (fib_num != 0)
     {
         while (fib_num > i)
         {
-            fib[i] = next;
+            printf(", %i", next);
             next = prev + curr;
             prev = curr;
             curr = next;
             i++;
-        }
-
-        for (int j = 1; j < i; j++)
-        {
-            printf(", %i", fib[j]);
         }
     }
 }

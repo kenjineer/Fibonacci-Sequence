@@ -6,27 +6,17 @@ void FiboSeq_Last(int last_num)
     int prev = 0;
     int curr = 1;
     int next = 1;
-    int fib[1000];
-    int i = 0;
 
-    fib[i] = prev;
-    cout << fib[i];
-    ++i;
+    cout << prev;
 
     if (last_num != 0)
     {
         while (last_num >= curr)
         {
-            fib[i] = next;
+            cout << ", " << next;
             next = prev + curr;
             prev = curr;
             curr = next;
-            i++;
-        }
-
-        for (int j = 1; j < i; j++)
-        {
-            cout << ", " << fib[j];
         }
     }
 }
@@ -36,27 +26,19 @@ void FiboSeq(int fib_num)
     int prev = 0;
     int curr = 1;
     int next = 1;
-    int fib[1000];
-    int i = 0;
+    int i = 1;
 
-    fib[i] = prev;
-    cout << fib[i];
-    ++i;
+    cout << prev;
 
     if (fib_num != 0)
     {
         while (fib_num > i)
         {
-            fib[i] = next;
+            cout << ", " << next;
             next = prev + curr;
             prev = curr;
             curr = next;
             i++;
-        }
-
-        for (int j = 1; j < i; j++)
-        {
-            cout << ", " << fib[j];
         }
     }
 }

@@ -26,8 +26,7 @@ public class Fibonacci
         int prev = 0;
         int curr = 1;
         int next = 1;
-        int[] fib = new int[100];
-        int  i = 1;
+        int i = 1;
 
         Console.Write(prev);
 
@@ -55,7 +54,7 @@ public class Fibonacci
         FibSeq_Last(last_num);
         Console.Write("\nEnter how many numbers will be generated in a Fibonacci Sequence: ");
         fib_num = int.Parse(Console.ReadLine());
-        Console.Write("The Fibonacci Squence with" + fib_num + " numbers is: ");
+        Console.Write("The Fibonacci Squence with " + fib_num + " numbers is: ");
         FibSeq(fib_num);
     }
 }
